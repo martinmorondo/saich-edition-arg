@@ -794,6 +794,19 @@ header
 }
 
 @media (max-width: 767px) {
+
+  .pre-header ul.info li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Espaciado opcional */
+  }
+
+  .pre-header ul.info li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  }
   .pre-header ul.info li:last-child {
     display: none;
   }
@@ -1552,6 +1565,15 @@ Services Style
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  .services .naccs .menu {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se apilen verticalmente */
+    gap: 15px; 
+  }
+}
+
+
 
 
 /* 
@@ -1625,6 +1647,12 @@ Free Quote
   background-color: #D7A850;
   font-size: 15px;
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  .free-quote form input {
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -1908,6 +1936,32 @@ Blog
   line-height: 30px;
 }
 
+@media (max-width: 767px)  {
+
+  .blog-post .down-content span.category {
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #D7A850;
+    border-radius: 18px;
+    display: inline-block;
+  }
+  
+  .blog-post .down-content span.date {
+    font-size: 15px;
+    color: #afafaf;
+    text-align: right;
+    float: right;
+    margin-top: 4px;
+  }
+  .post-item .right-content span.date {
+    font-size: 15px;
+    color: #afafaf;
+    text-align: right;
+    float: right;
+    margin-top: 4px;
+  }
+}
 
 /* 
 ---------------------------------------------
