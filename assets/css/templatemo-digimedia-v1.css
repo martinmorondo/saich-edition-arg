@@ -2126,6 +2126,11 @@ form#contact button:hover {
   color: #fff!important;
 }
 
+/* @media (max-width: 767px) {
+  .fill-form .info-post {
+  }
+} */
+
 /* 
 ---------------------------------------------
 Footer Style
@@ -2266,7 +2271,7 @@ responsive
     display: inline-block;
   }
   .services .naccs .menu div .thumb {
-    padding: 5px;
+    padding: 3px;
   }
   .services .icon img {
     margin: 0px;
