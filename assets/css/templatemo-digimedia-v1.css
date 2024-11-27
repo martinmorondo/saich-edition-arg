@@ -2126,10 +2126,12 @@ form#contact button:hover {
   color: #fff!important;
 }
 
-/* @media (max-width: 767px) {
-  .fill-form .info-post {
+
+@media (max-width: 767px) {
+  .fill-form {
+    padding: 80px 20px 20px 20px;
   }
-} */
+}
 
 /* 
 ---------------------------------------------
