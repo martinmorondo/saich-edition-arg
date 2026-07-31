@@ -18,19 +18,19 @@ export default function Services() {
                     <div className="menu">
                       <div className="first-thumb active">
                         <div className="thumb">
-                          <span className="icon"><img src="/assets/images/service-icon-01.png" alt="" /></span>
+                          <span className="icon"><img src="/assets/images/service-icon-01.png" alt="" loading="lazy"/></span>
                           Gestión de redes sociales
                         </div>
                       </div>
                       <div>
                         <div className="thumb">                 
-                          <span className="icon"><img src="/assets/images/service-icon-02.png" alt="" /></span>
+                          <span className="icon"><img src="/assets/images/service-icon-02.png" alt="" loading="lazy"/></span>
                           Creación Contenido Multimedia
                         </div>
                       </div>
                       <div>
                         <div className="thumb">                 
-                          <span className="icon"><img src="/assets/images/service-icon-03.png" alt="" /></span>
+                          <span className="icon"><img src="/assets/images/service-icon-03.png" alt="" loading="lazy"/></span>
                           Diseño y Desarrollo Web
                         </div>
                       </div>
@@ -42,7 +42,7 @@ export default function Services() {
                       </div>
                       <div className="last-thumb">
                         <div className="thumb">                 
-                          <span className="icon"><img src="/assets/images/service-icon-01.png" alt="" /></span>
+                          <span className="icon"><img src="/assets/images/service-icon-01.png" alt="" loading="lazy"/></span>
                           Asesoría y Estrategia
                         </div>
                       </div>
@@ -67,7 +67,7 @@ export default function Services() {
                               </div>
                               <div className="col-lg-6 align-self-center">
                                 <div className="right-image">
-                                  <img src="/assets/images/services-image.jpg" alt="Gestión de redes" />
+                                  <img src="/assets/images/services-image.jpg" alt="Gestión de redes" loading="lazy"/>
                                 </div>
                               </div>
                             </div>
@@ -94,7 +94,7 @@ export default function Services() {
                               </div>
                               <div className="col-lg-6 align-self-center">
                                 <div className="right-image">
-                                  <img src="/assets/images/services-image-02.jpg" alt="contenido multimedia" />
+                                  <img src="/assets/images/services-image-02.jpg" alt="contenido multimedia" loading="lazy"/>
                                 </div>
                               </div>
                             </div>
@@ -121,7 +121,7 @@ export default function Services() {
                               </div>
                               <div className="col-lg-6 align-self-center">
                                 <div className="right-image">
-                                  <img src="/assets/images/services-image-03.jpg" alt="Desarrollo web" />
+                                  <img src="/assets/images/services-image-03.jpg" alt="Desarrollo web" loading="lazy"/>
                                 </div>
                               </div>
                             </div>
@@ -149,7 +149,7 @@ export default function Services() {
                               </div>
                               <div className="col-lg-6 align-self-center">
                                 <div className="right-image">
-                                  <img src="/assets/images/services-image-04.jpg" alt="Campañas Publicitarias" />
+                                  <img src="/assets/images/services-image-04.jpg" alt="Campañas Publicitarias" loading="lazy"/>
                                 </div>
                               </div>
                             </div>
@@ -176,7 +176,7 @@ export default function Services() {
                               </div>
                               <div className="col-lg-6 align-self-center">
                                 <div className="right-image">
-                                  <img src="/assets/images/services-image.jpg" alt="Gestión de redes" />
+                                  <img src="/assets/images/services-image.jpg" alt="Gestión de redes" loading="lazy"/>
                                 </div>
                               </div>
                             </div>

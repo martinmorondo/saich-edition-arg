@@ -9,7 +9,7 @@ export default function About() {
             <div className="row">
               <div className="col-lg-6">
                 <FadeIn direction="left" delay={0.5} duration={1} className="about-left-image">
-                  <img src="/assets/images/about-dec.png" alt="Sobre nosotros" />
+                  <img src="/assets/images/about-dec.png" alt="Sobre nosotros" loading="lazy"/>
                 </FadeIn>
               </div>
               <div className="col-lg-6 align-self-center">

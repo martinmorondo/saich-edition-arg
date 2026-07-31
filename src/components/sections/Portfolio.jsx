@@ -33,7 +33,7 @@ export default function Portfolio() {
                 <a href="https://vikingas-sportbar.com/inicio" target="_blank" rel="noopener noreferrer">
                   <div className="portfolio-item">
                     <div className="thumb">
-                      <img src="/assets/images/restaurant-interior.jpg" alt="Vikingas Restaurante" />
+                      <img src="/assets/images/restaurant-interior.jpg" alt="Vikingas Restaurante" loading="lazy" />
                     </div>
                     <div className="down-content">
                       <h4>Vikingas Restaurante</h4>
@@ -47,7 +47,7 @@ export default function Portfolio() {
                 <a href="https://martinmorondoportfoli0.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <div className="portfolio-item">
                     <div className="thumb">
-                      <img src="/assets/images/portfolio-personal.png" alt="Portfolio Martín Morondo" />
+                      <img src="/assets/images/portfolio-personal.png" alt="Portfolio Martín Morondo" loading="lazy"/>
                     </div>
                     <div className="down-content">
                       <h4>Portfolio Martín Morondo</h4>
@@ -61,7 +61,7 @@ export default function Portfolio() {
                 <a href="https://para-variar-diario.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <div className="portfolio-item">
                     <div className="thumb">
-                      <img src="/assets/images/diario-online.jpg" alt="Diario Online Para Variar" />
+                      <img src="/assets/images/diario-online.jpg" alt="Diario Online Para Variar" loading="lazy" />
                     </div>
                     <div className="down-content">
                       <h4>Diario Online "Para Variar"</h4>

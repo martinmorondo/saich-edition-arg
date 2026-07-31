@@ -13,14 +13,14 @@ export default function Blog() {
           <div className="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
             <div className="blog-post">
               <div className="thumb">
-                <a href="blog-1.html"><img src="/assets/images/domina-frontend-backend.jpg.jpg" alt="Blog frontend" /></a>
+                <a href="blog-1.html"><img src="/assets/images/domina-frontend-backend.jpg.jpg" alt="Blog frontend" loading="lazy" /></a>
               </div>
               <div className="down-content">
                 <span className="category">Desarrollo web</span>
                 <span className="date">08 Noviembre 2026</span>
                 <a href="blog-1.html"><h4>La Importancia del Diseño y Desarrollo Web</h4></a>
                 <p>En la era digital, contar con una página web optimizada y atractiva es crucial...</p>
-                <span className="author"><img src="/assets/images/1591219266046-modified - copia.jpg.png" alt="Martín Morondo" />By: Martín Morondo</span>
+                <span className="author"><img src="/assets/images/1591219266046-modified - copia.jpg.png" alt="Martín Morondo" loading="lazy" />By: Martín Morondo</span>
                 <div className="border-first-button"><a href="blog-1.html" target="_blank" rel="noopener noreferrer">Descubra más</a></div>
               </div>
             </div>
@@ -31,7 +31,7 @@ export default function Blog() {
                 <div className="col-lg-12">
                   <div className="post-item">
                     <div className="thumb">
-                      <img src="/assets/images/seo.jpg" alt="SEO" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '23px' }} />
+                      <img src="/assets/images/seo.jpg" alt="SEO" loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '23px' }} />
                     </div>
                     <div className="right-content">
                       <span className="category">SEO</span>
