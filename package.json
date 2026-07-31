@@ -1,0 +1,42 @@
+{
+  "name": "saich-edition-arg",
+  "version": "1.0.0",
+  "description": "Saich Edition Argentina es una empresa especializada en el desarrollo web y la creación de soluciones visuales personalizadas para empresas y negocios de todo tipo. Ofrecemos un enfoque integral que abarca desde la construcción y optimización de sitios web hasta la edición, diseño de flyers, y la creación de logotipos únicos. Nuestro objetivo es potenciar la presencia digital de las marcas y ayudar a nuestros clientes a destacar en un entorno competitivo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinmorondo/saich-edition-arg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/martinmorondo/saich-edition-arg/issues"
+  },
+  "homepage": "https://github.com/martinmorondo/saich-edition-arg#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.4",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "prettier": "^3.9.6",
+    "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.5.7",
+    "framer-motion": "^12.42.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-hook-form": "^7.83.0",
+    "swiper": "^14.0.6",
+    "zod": "^4.4.3"
+  }
+}
