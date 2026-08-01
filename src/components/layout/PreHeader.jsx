@@ -11,8 +11,8 @@ export default function PreHeader() {
                 </a>
               </li>
               <li>
-                <a href="tel:+5492494672951">
-                  <i className="fa fa-phone phone-icon" aria-hidden="true"></i>2494-672951
+                <a href="tel:+5492494589310">
+                  <i className="fa fa-phone phone-icon" aria-hidden="true"></i>2494-589310
                 </a>
               </li>
             </ul>
