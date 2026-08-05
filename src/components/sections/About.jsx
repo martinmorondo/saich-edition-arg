@@ -1,6 +1,9 @@
 import FadeIn from '../animations/FadeIn';
+import { useTranslation } from 'react-i18next';
 
 export default function About() {
+  const { t } = useTranslation("global");
+
   return (
     <section id="about" className="about section" style={{ paddingTop: '120px', paddingBottom: '80px', overflowX: 'hidden' }}>
       <div className="container">
@@ -20,21 +23,22 @@ export default function About() {
             <FadeIn direction="up" delay={0.4} duration={1}>
               <div className="section-heading mb-4">
                 <h6 style={{ color: '#006B38', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                  Sobre la Agencia
+                  {t("about.subtitle")}
                 </h6>
                 <h4 style={{ fontWeight: '800', fontSize: '2.5rem', color: '#2a2a2a', marginTop: '10px' }}>
-                  Innovación Digital en <em>Saich Edition</em>
+                  {t("about.title_part1")} <em>{t("about.title_highlight")}</em>
                 </h4>
                 <div className="line-dec" style={{ backgroundColor: '#006B38', width: '50px', height: '4px', marginTop: '15px', borderRadius: '2px' }}></div>
               </div>
               
               <p style={{ fontSize: '1.1rem', color: '#555', lineHeight: '1.6', marginBottom: '30px' }}>
-                En Saich Edition Argentina, transformamos ideas en plataformas digitales de alto rendimiento. Nos alejamos de las plantillas genéricas para construir arquitecturas sólidas, identidades visuales que impactan y estrategias orientadas a la conversión de tu negocio.
+                {t("about.description")}
               </p>
 
               <div className="tech-stack mb-4">
-                <h5 style={{ fontSize: '1rem', fontWeight: '700', color: '#2a2a2a', marginBottom: '15px' }}>Tecnologías que dominamos:</h5>
+                <h5 style={{ fontSize: '1rem', fontWeight: '700', color: '#2a2a2a', marginBottom: '15px' }}>{t("about.tech_title")}</h5>
                 <div className="d-flex flex-wrap" style={{ gap: '10px' }}>
+                  {/* Los nombres de las tecnologías quedan estáticos porque son universales */}
                   {['HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Express', 'Python'].map((tech) => (
                     <span 
                       key={tech} 
@@ -50,14 +54,14 @@ export default function About() {
               <div className="row mt-4">
                 <div className="col-md-6 mb-3">
                   <div className="p-3 h-100" style={{ backgroundColor: '#f8f9fa', borderRadius: '12px', borderLeft: '4px solid #006B38', transition: 'transform 0.3s' }}>
-                    <h6 style={{ fontWeight: '700', color: '#2a2a2a', marginBottom: '5px' }}>Desarrollo Escalable</h6>
-                    <p style={{ fontSize: '0.9rem', margin: 0, color: '#666', lineHeight: '1.4' }}>Código limpio y optimizado para crecer junto a tu empresa.</p>
+                    <h6 style={{ fontWeight: '700', color: '#2a2a2a', marginBottom: '5px' }}>{t("about.card1_title")}</h6>
+                    <p style={{ fontSize: '0.9rem', margin: 0, color: '#666', lineHeight: '1.4' }}>{t("about.card1_desc")}</p>
                   </div>
                 </div>
                 <div className="col-md-6 mb-3">
                   <div className="p-3 h-100" style={{ backgroundColor: '#f8f9fa', borderRadius: '12px', borderLeft: '4px solid #006B38', transition: 'transform 0.3s' }}>
-                    <h6 style={{ fontWeight: '700', color: '#2a2a2a', marginBottom: '5px' }}>Diseño Integral</h6>
-                    <p style={{ fontSize: '0.9rem', margin: 0, color: '#666', lineHeight: '1.4' }}>UX/UI y branding pensados para retener y convertir usuarios.</p>
+                    <h6 style={{ fontWeight: '700', color: '#2a2a2a', marginBottom: '5px' }}>{t("about.card2_title")}</h6>
+                    <p style={{ fontSize: '0.9rem', margin: 0, color: '#666', lineHeight: '1.4' }}>{t("about.card2_desc")}</p>
                   </div>
                 </div>
               </div> 

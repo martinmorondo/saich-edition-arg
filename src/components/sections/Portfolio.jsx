@@ -1,21 +1,45 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import FadeIn from '../animations/FadeIn'; 
+import { useTranslation } from 'react-i18next'; 
+
+// Separamos la configuración estática de los proyectos
+const portfolioProjects = [
+  {
+    id: 'vikingas',
+    link: 'https://vikingas-sportbar.com/inicio',
+    image: '/assets/images/restaurant-interior.jpg',
+  },
+  {
+    id: 'portfolio',
+    link: 'https://martinmorondoportfoli0.netlify.app/',
+    image: '/assets/images/portfolio-personal.png',
+  },
+  {
+    id: 'diario',
+    link: 'https://para-variar-diario.vercel.app/',
+    image: '/assets/images/diario-online.jpg',
+  }
+];
 
 export default function Portfolio() {
+  const { t } = useTranslation("global");
+
   return (
     <section id="portfolio" className="our-portfolio section">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
-            <div className="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h6>Nuestro portfolio</h6>
-              <h4><em>Proyectos</em> más recientes</h4>
+            <FadeIn direction="left" delay={0.3} duration={1} className="section-heading">
+              <h6>{t("portfolio.subtitle")}</h6>
+              <h4><em>{t("portfolio.title_highlight")}</em>{t("portfolio.title_part2")}</h4>
               <div className="line-dec"></div>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </div>
-      <div className="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+      
+      <FadeIn direction="up" delay={0.5} duration={1} className="container-fluid">
         <div className="row">
           <div className="col-lg-12">
             <Swiper
@@ -29,53 +53,30 @@ export default function Portfolio() {
                 1200: { slidesPerView: 4 },
               }}
             >
-              <SwiperSlide>
-                <a href="https://vikingas-sportbar.com/inicio" target="_blank" rel="noopener noreferrer">
-                  <div className="portfolio-item">
-                    <div className="thumb">
-                      <img src="/assets/images/restaurant-interior.jpg" alt="Vikingas Restaurante" loading="lazy" />
+              {/* Iteramos sobre el arreglo de proyectos */}
+              {portfolioProjects.map((project) => (
+                <SwiperSlide key={project.id}>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <div className="portfolio-item">
+                      <div className="thumb">
+                        <img 
+                          src={project.image} 
+                          alt={t(`portfolio.projects.${project.id}.title`)} 
+                          loading="lazy" 
+                        />
+                      </div>
+                      <div className="down-content">
+                        <h4>{t(`portfolio.projects.${project.id}.title`)}</h4>
+                        <span>{t(`portfolio.projects.${project.id}.category`)}</span>
+                      </div>
                     </div>
-                    <div className="down-content">
-                      <h4>Vikingas Restaurante</h4>
-                      <span>Marketing y página web</span>
-                    </div>
-                  </div>
-                </a>  
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <a href="https://martinmorondoportfoli0.netlify.app/" target="_blank" rel="noopener noreferrer">
-                  <div className="portfolio-item">
-                    <div className="thumb">
-                      <img src="/assets/images/portfolio-personal.png" alt="Portfolio Martín Morondo" loading="lazy"/>
-                    </div>
-                    <div className="down-content">
-                      <h4>Portfolio Martín Morondo</h4>
-                      <span>Página web</span>
-                    </div>
-                  </div>
-                </a>  
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <a href="https://para-variar-diario.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <div className="portfolio-item">
-                    <div className="thumb">
-                      <img src="/assets/images/diario-online.jpg" alt="Diario Online Para Variar" loading="lazy" />
-                    </div>
-                    <div className="down-content">
-                      <h4>Diario Online "Para Variar"</h4>
-                      <span>Página web</span>
-                    </div>
-                  </div>
-                </a>  
-              </SwiperSlide>
-              
-
+                  </a>  
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

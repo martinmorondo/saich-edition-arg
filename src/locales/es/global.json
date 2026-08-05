@@ -1,0 +1,164 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "quote": "Cotización"
+  },
+  "banner": {
+    "subtitle": "Saich Edition Argentina",
+    "title_part1": "Impulsamos tu Marca en el ",
+    "title_highlight": "Mundo Digital",
+    "description": "Transformamos tus ideas en una poderosa presencia digital. Ofrecemos desarrollo de páginas web, diseño de identidad visual y estrategias de marketing para hacer escalar tu negocio.",
+    "btn_primary": "Pide una cotización",
+    "btn_secondary": "Ver proyectos"
+  },
+  "about": {
+    "subtitle": "Sobre la Agencia",
+    "title_part1": "Innovación Digital en ",
+    "title_highlight": "Saich Edition",
+    "description": "En Saich Edition Argentina, transformamos ideas en plataformas digitales de alto rendimiento. Nos alejamos de las plantillas genéricas para construir arquitecturas sólidas, identidades visuales que impactan y estrategias orientadas a la conversión de tu negocio.",
+    "tech_title": "Tecnologías que dominamos:",
+    "card1_title": "Desarrollo Escalable",
+    "card1_desc": "Código limpio y optimizado para crecer junto a tu empresa.",
+    "card2_title": "Diseño Integral",
+    "card2_desc": "UX/UI y branding pensados para retener y convertir usuarios."
+  },
+  "services": {
+    "subtitle": "Nuestros servicios",
+    "title_part1": "Cómo hacemos ",
+    "title_highlight": "crecer tu negocio",
+    "items": {
+      "social": {
+        "navTitle": "Redes Sociales",
+        "title": "Gestión de Redes Sociales",
+        "description": "Convertimos tus perfiles en un imán de clientes. Sabemos cómo construir comunidades sólidas y crear contenido que atrapa a la audiencia correcta, haciendo que tu marca sea imposible de ignorar.",
+        "ticks": [
+          "Estrategias de crecimiento",
+          "Contenido que genera interacción",
+          "Análisis para mejorar resultados"
+        ]
+      },
+      "multimedia": {
+        "navTitle": "Contenido Multimedia",
+        "title": "Creación de Contenido Visual",
+        "description": "Damos vida a tu marca con videos de formato corto e imágenes de alto impacto. Diseñamos material con una edición dinámica, pensado específicamente para retener la atención en cada segundo.",
+        "ticks": [
+          "Videos cortos para redes (Reels/TikToks)",
+          "Edición moderna y dinámica",
+          "Diseño visual que destaca"
+        ]
+      },
+      "web": {
+        "navTitle": "Páginas Web",
+        "title": "Diseño y Desarrollo Web",
+        "description": "Construimos tu sucursal digital abierta 24/7. Creamos páginas ultra rápidas, seguras y diseñadas para que tus visitas tengan una experiencia fluida y se conviertan en ventas.",
+        "ticks": [
+          "Diseño perfecto para celulares",
+          "Sitios rápidos y seguros",
+          "Estructura orientada a vender"
+        ]
+      },
+      "ads": {
+        "navTitle": "Publicidad",
+        "title": "Campañas Publicitarias",
+        "description": "Hacemos que cada centavo de tu inversión cuente. Diseñamos anuncios precisos para llegar exactamente a las personas que ya están buscando lo que ofreces en Google y redes sociales.",
+        "ticks": [
+          "Anuncios directos a tu cliente ideal",
+          "Maximización de tu presupuesto",
+          "Resultados medibles y reales"
+        ]
+      },
+      "strategy": {
+        "navTitle": "Estrategia Digital",
+        "title": "Asesoría y Estrategia",
+        "description": "Te damos el mapa exacto para triunfar en internet. Analizamos tu negocio y te acompañamos paso a paso para que dejes de improvisar y empieces a ver un crecimiento real.",
+        "ticks": [
+          "Hoja de ruta clara y accionable",
+          "Consultoría personalizada",
+          "Análisis de tu competencia"
+        ]
+      }
+    }
+  },
+  "freeQuote": {
+    "subtitle": "Obtén tu cotización gratuita",
+    "title": "Crezcamos juntos ahora",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "submit": "Obtenga su cotización",
+      "submitting": "Enviando...",
+      "success": "¡Cotización solicitada con éxito! Te responderemos pronto."
+    },
+    "errors": {
+      "name": "Mínimo 2 caracteres",
+      "email": "Email inválido"
+    }
+  },
+  "portfolio": {
+    "subtitle": "Nuestro portfolio",
+    "title_highlight": "Proyectos",
+    "title_part2": " más recientes",
+    "projects": {
+      "vikingas": {
+        "title": "Vikingas Restaurante",
+        "category": "Marketing y página web"
+      },
+      "portfolio": {
+        "title": "Portfolio Martín Morondo",
+        "category": "Página web"
+      },
+      "diario": {
+        "title": "Diario Online \"Para Variar\"",
+        "category": "Página web"
+      }
+    }
+  },
+  "blog": {
+    "subtitle": "Nuestro blog",
+    "title_part1": "Visita nuestros ",
+    "title_highlight": "posts",
+    "featured": {
+      "category": "Desarrollo web",
+      "date": "08 Noviembre 2026",
+      "title": "La Importancia del Diseño y Desarrollo Web",
+      "excerpt": "En la era digital, contar con una página web optimizada y atractiva es crucial...",
+      "author": "Por: Martín Morondo",
+      "button": "Descubra más"
+    },
+    "posts": {
+      "seo": {
+        "category": "SEO",
+        "date": "08 Noviembre 2026",
+        "title": "Análisis SEO: Clave para el Crecimiento",
+        "excerpt": "En un entorno digital que se encuentra en constante evolución..."
+      }
+    }
+  },
+  "contact": {
+    "subtitle": "Contacto",
+    "title_part1": "Siga en contacto con ",
+    "title_highlight": "nosotros",
+    "info": {
+      "location": "México - Argentina"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto a la brevedad."
+    },
+    "errors": {
+      "name": "El nombre debe tener al menos 2 caracteres",
+      "email": "Ingresa un email válido",
+      "message": "El mensaje debe tener al menos 10 caracteres"
+    }
+  }
+}
