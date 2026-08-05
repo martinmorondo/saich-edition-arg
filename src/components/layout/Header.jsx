@@ -1,19 +1,17 @@
 import { useState } from 'react';
 import FadeIn from '../animations/FadeIn';
-import { useTranslation } from 'react-i18next'; 
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t, i18n } = useTranslation("global"); // <-- Iniciamos la traducción
+  const { t, i18n } = useTranslation("global");
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Función para cambiar el idioma
   const handleChangeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
-  // Pequeña lógica para saber qué idioma está activo y pintar el botón
   const currentLang = i18n.language || 'es';
 
   return (
@@ -33,22 +31,51 @@ export default function Header() {
                 <li className="scroll-to-section"><a href="#portfolio" onClick={toggleMenu}>{t("header.portfolio")}</a></li>
                 <li className="scroll-to-section"><a href="#blog" onClick={toggleMenu}>{t("header.blog")}</a></li>
                 <li className="scroll-to-section"><a href="#contact" onClick={toggleMenu}>{t("header.contact")}</a></li> 
-                <li className="scroll-to-section">
-                  <div className="border-first-button"><a href="#contact" onClick={toggleMenu}>{t("header.quote")}</a></div>
+                
+                {/* Botón de Cotización */}
+                <li className="scroll-to-section" style={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>
+                  <a 
+                    href="#contact" 
+                    onClick={toggleMenu}
+                    style={{
+                      border: '2px solid #006B38',
+                      color: '#006B38',
+                      borderRadius: '50px',
+                      padding: '8px 24px',
+                      fontWeight: '600',
+                      lineHeight: '1',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      backgroundColor: 'transparent',
+                      transition: 'all 0.3s ease',
+                      textDecoration: 'none'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = '#006B38';
+                      e.currentTarget.style.setProperty('color', '#ffffff', 'important');
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.setProperty('color', '#006B38', 'important');
+                    }}
+                  >
+                    {t("header.quote")}
+                  </a>
                 </li> 
 
-                {/* Selector de idioma (Switch) */}
-                <li className="d-flex align-items-center justify-content-center" style={{ paddingLeft: '15px' }}>
+                {/* Selector de idioma */}
+                <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', paddingLeft: '20px' }}>
                   <button 
                     onClick={() => handleChangeLanguage('es')}
-                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontWeight: 'bold', color: currentLang.startsWith('es') ? '#006B38' : '#aaa' }}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontWeight: 'bold', color: currentLang.startsWith('es') ? '#006B38' : '#aaa', padding: 0 }}
                   >
                     ES
                   </button>
-                  <span style={{ color: '#ccc', margin: '0 5px' }}>|</span>
+                  <span style={{ color: '#ccc', margin: '0 8px', lineHeight: '1' }}>|</span>
                   <button 
                     onClick={() => handleChangeLanguage('en')}
-                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontWeight: 'bold', color: currentLang.startsWith('en') ? '#006B38' : '#aaa' }}
+                    style={{ background: 'none', border: 'none', cursor: 'pointer', fontWeight: 'bold', color: currentLang.startsWith('en') ? '#006B38' : '#aaa', padding: 0 }}
                   >
                     EN
                   </button>

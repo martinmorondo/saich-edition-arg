@@ -73,7 +73,7 @@ export default function Contact() {
                           <div className="info-post">
                             <div className="icon">
                               <img src="/assets/images/phone-icon.png" alt="Teléfono" />
-                              <a href="tel:+5492494672951">2494-672951</a>
+                              <a href="tel:+5492494589310">2494-589310</a>
                             </div>
                           </div>
                         </div>
